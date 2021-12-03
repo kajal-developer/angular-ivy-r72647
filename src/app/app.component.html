@@ -1,0 +1,8 @@
+<hello name="{{ name }}"></hello>
+<p>Start editing to see some magic happen :)</p>
+<h3>{{myComapny}}</h3>
+<p> <span [innerHTML]="companyAddr"></span> </p>
+<button [disabled]="disableStat"  (click) = "myClickFunction($event)">Login</button>
+
+<select [(ngModel)]="selectedMonth" (change) = "changemonths($event)" ><option *ngFor="let i of months">{{i}}</option>
+</select>
